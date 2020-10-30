@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="Icon" href="images/download.png" />
+    <title>ACK Bondo</title>
+  </head>
+  <body>
+    <!--NAVBAR START-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <a class="navbar-brand" href="index.html">ACK BONDO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link btn btn-primary btn-sm" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sermons</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-primary btn-sm" href="#">Sermons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donate</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-primary btn-sm" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--SLIDER IMAGE-->
+    <div class="slider">
+      <div class="slide current">
+        <div class="content">
+          <h1>Online Chama</h1>
+          <p>Believe in working together.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <h1>Work...</h1>
+          <p>The fruits of hard work are innevitable.</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <h1>Unity</h1>
+          <p>
+            Unity is strength... when there is teamwork and collaboration,
+            wonderful things can be achieved.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <h1>Next...</h1>
+          <p>Money is usually attracted not pursued.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--BODY START-->
+    <div class="container">
+      <div class="text-center mt-3">
+        <a
+          href="views/login-sign-up.html"
+          class="btn join-us btn-outline-dark btn-lg text-center"
+          >Join Us...</a
+        >
+      </div>
+      <div class="row">
+        <div class="col-md-8 mt-5 border about-us border-dark">
+          <h1 id="about">About us</h1>
+          <p>
+            Have you been looking for an online way to do your Chama activities?
+            Look no further. Online Chama provides an online means by which one
+            can conduct their chama activities stress freely. Its book-keeping
+            for finances, chama monitoring amongst other services is just what
+            you need.
+            <a href="views/login-sign-up.html" class="register"
+              >REGISTER TODAY</a
+            >.
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div
+          class="col-md-3 mt-5 border border-light h-50 p-2 text-center"
+          style="background-color: #ff416c; color: #fff"
+        >
+          <p>
+            All your Chama tools in one. Online Chama, believe in working
+            together.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER START-->
+    <div class="card-footer footer bg-dark text-white mt-2">
+      <p class="text-center">Copyright &copy; 2020 Online Chama</p>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      const slides = document.querySelectorAll(".slide");
+      const next = document.querySelector("#next");
+      const prev = document.querySelector("#prev");
+      const auto = true;
+      const intervalTime = 6000;
+      let slideInterval;
+
+      const nextSlide = () => {
+        //get current class
+        const current = document.querySelector(".current");
+        //remove current class
+        current.classList.remove("current");
+        //check for next slide
+        if (current.nextElementSibling) {
+          //add current to next sibbling
+          current.nextElementSibling.classList.add("current");
+        } else {
+          //add current to start
+          slides[0].classList.add("current");
+        }
+        setTimeout(() => current.classList.remove("current"));
+      };
+
+      const prevSlide = () => {
+        //get current class
+        const current = document.querySelector(".current");
+        //remove current class
+        current.classList.remove("current");
+        //check for next slide
+        if (current.previousElementSibling) {
+          //add current to previous sibbling
+          current.previousElementSibling.classList.add("current");
+        } else {
+          //add current to last
+          slides[slides.length - 1].classList.add("current");
+        }
+        setTimeout(() => current.classList.remove("current"));
+      };
+
+      //autoslide
+      if (auto) {
+        //run next slide at interval time
+        slideInterval = setInterval(nextSlide, intervalTime);
+      }
+    </script>
+  </body>
+</html>
