@@ -10793,32 +10793,6 @@ body {
   transition: all 0.7s ease-in-out 0.4s;
 }
 
-/*buttons*/
-.buttons button#next {
-  position: absolute;
-  top: 70%;
-  right: 15px;
-}
-.buttons button#prev {
-  position: absolute;
-  top: 70%;
-  left: 15px;
-}
-.buttons button {
-  border: 2px solid white;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  outline: none;
-  font-size: 10px;
-}
-.buttons button:hover {
-  background-color: white;
-  color: #333;
-  transition: 0.3s ease-in;
-}
 @media (max-width: 500px) {
   .slide .content {
     bottom: -300px;
