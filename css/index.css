@@ -10752,7 +10752,7 @@ body {
 .slider {
   position: relative;
   overflow: hidden;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
 }
 .slide {
@@ -10782,7 +10782,7 @@ body {
   left: -500px;
   width: 500px;
   opacity: 0;
-  z-index: 1; 
+  z-index: 1;
   border-top: 1px solid white;
   border-right: 1px solid white;
   color: #fff;
