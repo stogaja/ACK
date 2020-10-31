@@ -10752,7 +10752,7 @@ body {
 .slider {
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
 }
 .slide {
