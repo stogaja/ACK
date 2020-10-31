@@ -4,6 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -46,6 +47,7 @@
 
 * {
   outline: none !important;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
