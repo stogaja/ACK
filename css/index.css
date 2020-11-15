@@ -10732,7 +10732,7 @@ body {
   transition: all 1s ease-in-out;
 }
 .join-us {
-  background: linear-gradient(to right, #7b1fa2, #9c27b0, #8e24aa) no-repeat 0 0 /
+  background: linear-gradient(to right, #7b1fa2, #9c27b0, #6c0688) no-repeat 0 0 /
     cover;
   color: white;
   box-shadow: 10px 10px 20px #333;
@@ -10760,8 +10760,14 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
 }
+
+@media (max-width: 500px) {
+  .slider {
+    border-radius: 0 0 100px 15px !important;
+  }
+}
+
 .slide::after {
   content: "";
   position: absolute;
