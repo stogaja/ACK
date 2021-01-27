@@ -10740,9 +10740,6 @@ body {
   transform: scale(0.99);
   transition: all 1s ease-in-out;
 }
-.about-us {
-  border: 1px solid #ff416c !important;
-}
 .footer {
   background: linear-gradient(to left, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
   border-top: none;
