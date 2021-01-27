@@ -10765,7 +10765,7 @@ body {
 
 @media (max-width: 500px) {
   .slider {
-    border-radius: 0 0 100px 15px !important;
+    border-radius: 0 0 100px 25px !important;
   }
 }
 
