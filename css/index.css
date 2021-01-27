@@ -4,7 +4,8 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -47,7 +48,7 @@
 
 * {
   outline: none !important;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 html {
@@ -10838,4 +10839,9 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
+}
+
+.bg-color {
+  background: linear-gradient(to right, #7b1fa2, #9c27b0, #8e24aa) no-repeat 0 0 /
+    cover;
 }
