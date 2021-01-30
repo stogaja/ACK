@@ -2757,6 +2757,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+  box-shadow: 10px 10px 20px #333;
 }
 
 .btn-primary:hover {
@@ -10733,7 +10734,7 @@ body {
   box-shadow: none;
   background-color: #9c27b0;
   transform: scale(0.97);
-  transition: all 1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .join-us {
   background: linear-gradient(to right, #7b1fa2, #9c27b0, #6c0688) no-repeat 0 0 /
@@ -10844,4 +10845,9 @@ body {
 .bg-color {
   background: linear-gradient(to right, #7b1fa2, #9c27b0, #8e24aa) no-repeat 0 0 /
     cover;
+}
+
+em,
+.em {
+  font-weight: 600;
 }
