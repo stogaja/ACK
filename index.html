@@ -7,13 +7,17 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="Icon" href="images/download.png" />
+    <link rel="Icon" href="images/logo.png" />
     <title>ACK Bondo</title>
   </head>
   <body>
     <!--NAVBAR START-->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <a class="navbar-brand" href="index.html">ACK BONDO</a>
+      <a class="navbar-brand" href="index.html">
+
+        <img src="images/logo.png" alt="" height="80px">
+
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -58,14 +62,31 @@
       <div class="slide current">
         <div class="content">
           <h1>ST. MICHAEL AND ALL ANGELS' CATHEDRAL</h1>
-          <p>Where people gather…to worship, share and learn.</p>
+          <p>
+            Come to him, to that living stone rejected by men but in God's sight
+            chosen and precious" <br />
+            (1<small>st </small>Peter 2:4)
+          </p>
         </div>
       </div>
 
-      <div class="slide">
+      <div class="text-center slide">
         <div class="content">
-          <h1>Work...</h1>
-          <p>The fruits of hard work are innevitable.</p>
+          <h2><u>Our Services</u></h2>
+          <h3>First Service in Luo</h3>
+          <p>7:00 am - 8:30 am</p>
+
+          <h3>Second Service in English</h3>
+          <p>8:30 am - 10:30 am</p>
+
+          <h3>Third Ecummenical Service</h3>
+          <p>10:30 am</p>
+
+          <h3>Teens Service</h3>
+          <p>From 8:30 am</p>
+
+          <h3>Sunday School Service</h3>
+          <p>From 8:30 am</p>
         </div>
       </div>
 
@@ -115,12 +136,23 @@
         <div class="col-sm-6">
           <div class="card mt-5">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title text-center">ACTIVITIES</h5>
+              <p class="card-text"></p>
+
+              <ul class="ml-2 mb-0">
+                <li><b>Tuesday</b> > T.E.E class between 4:00 pm - 5:00 pm.</li>
+                <li><b>Wednesday</b> > Mid-week service at 4:00 pm.</li>
+                <li>
+                  <b>Saturday</b> > Praise and worship practice at 3:00 pm.
+                </li>
+                <li>
+                  KAMA breakfast, bible study and fellowship every second
+                  Saturday of the month.
+                </li>
+                <li>
+                  Confirmation classes every Tuesday and Saturday from 2:00 pm.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -279,7 +311,7 @@
       const next = document.querySelector("#next");
       const prev = document.querySelector("#prev");
       const auto = true;
-      const intervalTime = 6000;
+      const intervalTime = 2000;
       let slideInterval;
 
       const nextSlide = () => {
