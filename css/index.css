@@ -10853,3 +10853,7 @@ em,
 .em {
   font-weight: 600;
 }
+
+.card{
+  border: 1px solid black !important;
+}
