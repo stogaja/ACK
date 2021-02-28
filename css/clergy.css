@@ -82,7 +82,7 @@ html {
   background-color: transparent;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 580px) {
   .pimg1,
   .pimg2,
   .pimg3 {
