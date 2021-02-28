@@ -81,3 +81,11 @@ html {
 .ptext .border.trans {
   background-color: transparent;
 }
+
+@media (max-width: 540px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+}
