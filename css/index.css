@@ -4,6 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 html {
   scroll-behavior: smooth;
 }
@@ -10371,6 +10372,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace !important;
 }
 
@@ -10695,10 +10697,7 @@ a.text-dark:focus {
   padding: 0;
 }
 body {
-  /*
-    background: #333;
-    color: white;*/
-  line-height: 1.6;
+  line-height: 1.6 !important;
 }
 .navbar {
   background: linear-gradient(to right, #7b1fa2, #9c27b0, #8e24aa) no-repeat 0 0 /
@@ -10834,6 +10833,6 @@ em,
   font-weight: 600;
 }
 
-.card{
+.card {
   border: 1px solid black !important;
 }
