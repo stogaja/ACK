@@ -10835,4 +10835,5 @@ em,
 
 .card {
   border: 1px solid black !important;
+  box-shadow: 10px 6px 6px grey;
 }
